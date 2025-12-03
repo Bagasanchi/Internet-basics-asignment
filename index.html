@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Godot Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>My Godot Game</h1>
+        </header>
+        <div class="content">
+            <h2>About the Game</h2>
+            <p>
+                Welcome! This is the Introduction web for my Game on Godot. I've
+                made a simple 2D game for this assignment. Feel free to test it
+                by clicking the button below.
+            </p>
+
+            <div class="game-container">
+                <h2>Play the Game</h2>
+                <button onclick="loadGame()">Load Game</button>
+
+                <div id="gameFrameContainer" class="game-frame-container">
+                    <iframe
+                        id="gameFrame"
+                        src="godot-build/index.html"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
