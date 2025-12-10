@@ -11,25 +11,59 @@
             <h1>My Godot Game</h1>
         </header>
         <div class="content">
-            <h2>About the Game</h2>
+            <!-- How the game was made -->
+            <h2>How the game was made</h2>
             <p>
-                Welcome! This is the Introduction web for my Game on Godot. I've
-                made a simple 2D game for this assignment. Feel free to test it
-                by clicking the button below.
+                This game was developed using the Godot game engine, which is an
+                open-source platform for creating 2D and 3D games. I started by
+                designing the game mechanics and creating simple graphics for
+                the player character and obstacles. The game logic was
+                implemented using GDScript, Godot's built-in scripting language.
+                Throughout the development process, I tested the game frequently
+                to ensure smooth gameplay and made adjustments based on my
+                observations. Overall, this project was a great learning
+                experience in game development with Godot.
             </p>
-
+            <p>
+                I used the iframe tag to embed the game into this webpage. I
+                exported the game files from Godot and placed them in my folder
+                for the assignment.
+            </p>
+            <p>
+                For the godot files please check the "godot-build" folder in the
+                project directory. There you can see all the files that were
+                exported from godot. because when I exported my game from Godot,
+                it automatically translated the GDScript code into HTML, CSS and
+                JavaScript.
+            </p>
+            <!-- How to Play/Use -->
+            <h2>How to play the game</h2>
+            <p>
+                To play the game, use the arrow keys on your keyboard or use
+                wasd. Both works totally fine. The goal of the game is to reach
+                the end of the level while avoiding obstacles that spawn from
+                both sides of the road. Click the Button below to load the game.
+                Have Fun!
+            </p>
+            <!-- Main game tag -->
             <div class="game-container">
                 <h2>Play the Game</h2>
+                <!-- Only part where I used JavaScript -->
                 <button onclick="loadGame()">Load Game</button>
-
+                <!-- Line where the game iframe is -->
                 <div id="gameFrameContainer" class="game-frame-container">
                     <iframe
                         id="gameFrame"
                         src="godot-build/index.html"></iframe>
                 </div>
             </div>
+            <div class="links">
+                <a href="introduction.html">Introduction Page</a>
+                <a href="index.html">Game Testing</a>
+            </div>
         </div>
 
+        <!-- linking JavaScript -->
         <script src="script.js"></script>
     </body>
 </html>
